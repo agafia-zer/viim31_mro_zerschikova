@@ -10,7 +10,7 @@ class Circle:
         self.x = x
         self.y = y
         self.r = r
-        self.batch_size = batch_size  # Unique batch size for each circle
+        self.batch_size = batch_size 
         self.gen_class()
 
     def gen_class(self):
@@ -45,7 +45,7 @@ except FileNotFoundError:
         x = float(input('x = '))
         y = float(input('y = '))
         r = float(input('r = '))
-        batch_size = int(input('batch size = '))  # Input batch size for each circle
+        batch_size = int(input('batch size = '))  
         classes.append(Circle(x, y, r, batch_size))
 
 result = open('data/data_datch.txt', 'w')
